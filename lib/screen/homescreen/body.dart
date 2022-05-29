@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:reviewapp/config/image.dart';
 import 'package:reviewapp/config/theme.dart';
+import 'package:reviewapp/model/restuarant_list.dart';
+import 'package:reviewapp/screen/homescreen/component/home_item_list.dart';
 
-class HomeScreenBody extends StatelessWidget{
+class HomeRestaurantTypeList extends StatelessWidget{
+  var rest=Restaurant("My Restaurent", CustomAssetImage.f1, "New Restaurent");
+
+  final list=MyListBuilder.buildList();
+
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return
+          Expanded(
+            child: ListView.builder(
+              itemCount:list.length,
+              itemBuilder: (BuildContext context,int index){
+                return HomeItemList( data:list[index]);
+              },
+            ),
+          );
 
-      child: Column(
-        children: [
-
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("Home",style: CustomAppTheme.textTheme1.subtitle1,),
-              SizedBox(width: 8,),
-              Text("Shaymoli, Dhaka",style: CustomAppTheme.textTheme1.subtitle2,)
-            ],
-          )
-
-        ],
-      ),
-    );
   }
 
 }

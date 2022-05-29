@@ -28,17 +28,17 @@ class CustomAppTheme{
     subtitle1: GoogleFonts.balooDa2(
         fontSize: 14, fontWeight: FontWeight.w500, letterSpacing: 0.15,color: CustomAppColor.colorPrimaryDark),
     subtitle2: GoogleFonts.balooDa2(
-        fontSize: 14, fontWeight: FontWeight.w400, letterSpacing: 0.1),
+        fontSize: 14, fontWeight: FontWeight.w400, letterSpacing: 0.1,color: CustomAppColor.colorBlack),
     bodyText1: GoogleFonts.balooDa2(
         fontSize: 16, fontWeight: FontWeight.w400, letterSpacing: 0.5),
     bodyText2: GoogleFonts.balooDa2(
-        fontSize: 14, fontWeight: FontWeight.w400, letterSpacing: 0.25),
+        fontSize: 12, fontWeight: FontWeight.w400, letterSpacing: 0.25,color: CustomAppColor.appBackgroundColor),
     button: GoogleFonts.balooDa2(
         fontSize: 14, fontWeight: FontWeight.w500, letterSpacing: 1.25),
     caption: GoogleFonts.balooDa2(
-        fontSize: 12, fontWeight: FontWeight.w400, letterSpacing: 0.4),
+        fontSize: 12, fontWeight: FontWeight.w400, letterSpacing: 0.4,color: CustomAppColor.appBackgroundColor),
     overline: GoogleFonts.balooDa2(
-        fontSize: 10, fontWeight: FontWeight.w400, letterSpacing: 1.5),
+        fontSize: 10, fontWeight: FontWeight.w400, letterSpacing: 1.5,color: Colors.grey),
   );
 
   static  AppBar customAppBar(){

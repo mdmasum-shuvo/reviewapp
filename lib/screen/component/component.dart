@@ -35,7 +35,7 @@ class CommonComponent{
                           child: TextField(
                                 //  textAlign: TextAlign.center,
                                   decoration: InputDecoration(
-                                    hintText: "Search Restaurant or Dishes",
+                                    ///hintText: "Search Restaurant or Dishes",
                                     fillColor: Colors.white,
                                     filled: true,
                                     contentPadding: EdgeInsets.symmetric(vertical: 4,horizontal: 8),
